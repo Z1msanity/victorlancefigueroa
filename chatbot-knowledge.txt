@@ -1,0 +1,73 @@
+VICTOR LANCE C. FIGUEROA - PORTFOLIO WEBSITE KNOWLEDGE BASE
+ 
+This is the official information about Victor Lance C. Figueroa and his personal portfolio website. Use only this information to answer questions about him and his site.
+ 
+ 
+ABOUT VICTOR
+Victor Lance C. Figueroa is a 2nd year BSIT (Bachelor of Science in Information Technology) student specializing in Networking and Cybersecurity at Central Luzon State University (CLSU). He is a cybersecurity enthusiast, an ethical hacker in training, and a Python and Java developer. He is based in Guimba, Nueva Ecija, Philippines.
+ 
+His personal tagline is: "Insanity is just another state of mind".
+ 
+His view on technology: technology is about empowering people, driving change, and creating meaningful experiences, not just building tools. True innovation comes from embracing constant evolution, prioritizing user-centric design, and persevering through debugging, knowing that the best solutions are born from persistent effort.
+ 
+His online handle is Z1msanity.
+ 
+ 
+CONTACT AND LINKS
+- Email: victorlancefigueroa@gmail.com
+- LinkedIn: https://www.linkedin.com/in/victorlancefigueroa/
+- GitHub: https://github.com/Z1msanity
+- Book a meeting: https://cal.com/victorlance-figueroa-tkwzwt (the Schedule a Meeting section on the Contact part of the website). Good topics for a meeting are tech, cybersecurity, or collaborations.
+- Location: Guimba, Nueva Ecija, Philippines
+ 
+ 
+EDUCATION
+- 2025 to present: Central Luzon State University. Bachelor of Science in Information Technology, specializing in Networking and Cybersecurity. Currently enrolled.
+- 2024 to 2025: Our Lady of the Sacred Heart College of Guimba Inc. Senior High School.
+- 2022 to 2023: Our Lady of the Sacred Heart College of Guimba Inc. High School.
+- 2018 to 2019: Our Lady of the Sacred Heart College of Guimba Inc. Grade School.
+ 
+ 
+SCHOOL EXPERIENCE AND TESDA CERTIFICATIONS
+- 2023, Visual Graphic Design (NC III): A TESDA-certified course that trains people to create digital and print graphics, including logos, branding, UI/UX, product packaging, and booth displays.
+- 2023, Work Immersion at the National Irrigation Administration - Upper Pampanga River Integrated Irrigation Systems (NIA-UPRIS): Worked with senior Civil and Mechanical engineers. Handled documentation, data management, and technical field operations.
+- 2022, Technical Drafting (NC II): A TESDA-certified course that trains people to create technical drawings for architectural, structural, electrical, plumbing, and mechanical layouts using CAD software.
+ 
+ 
+SKILLS (self-rated proficiency shown on the website)
+- Python and Cybersecurity: 90%
+- Java and Web Design: 80%
+- Database Management: 80%
+- Networking and JavaScript: 70%
+ 
+ 
+CERTIFICATIONS AND CREDENTIALS LISTED ON THE WEBSITE
+CPEH, CWPT, CCEP, ISC2, IBMCE, PSITE, CYBER PH, Technical Drafting NC II, and Visual Graphic Design NC III.
+CCEP stands for Certified CyberSecurity Educator Professional, shown in the portfolio as a Red Team certification.
+CWPT stands for Certified Web Penetration Tester. Victor completed this certification module through Appkademiya (a cybersecurity certification provider). It was issued on September 11, 2026, is digitally verified, and was authorized by Rommel Jay Gadil, Founder of Appkademiya.
+ 
+ 
+PROJECTS AND ACHIEVEMENTS (Portfolio section)
+Each project has photos that open in a gallery when clicked.
+1. Billing System: A simple Java billing system.
+2. Billing GUI System: A simple billing system with a graphical user interface.
+3. Billing Receipt: The final process of the billing system, which produces the receipt.
+4. MySQL Program: A simple database program.
+5. Database Interface: A simple database interface.
+6. HTML Website: A simple yet modern website built with HTML and CSS.
+7. CTF Try Hack Me: Browser-based cybersecurity labs on TryHackMe.
+8. picoCTF: A gamified cybersecurity education program (capture-the-flag challenges).
+9. Red Team Certification (CCEP): Certified CyberSecurity Educator Professional.
+10. CWPT Certification: Certified Web Penetration Tester, issued by Appkademiya on September 11, 2026. The certificate image is shown in the portfolio.
+ 
+ 
+ABOUT THIS WEBSITE
+- The site opens with a hacker-style terminal and a mini CTF (capture the flag) game. Visitors capture 3 flags to unlock the full website. The challenges use Base64, ROT13, and hexadecimal decoding, using commands typed into a small terminal. Do not reveal the flags or the answers. If a visitor is stuck, tell them to type "help" or "hint" in the terminal, and that each challenge says which encoding it uses.
+- After unlocking, the site has these sections: Home, About, Education, Skills, Portfolio, and Contact.
+- There is a Replay button on the terminal to play the game again, and a sound toggle in the navigation bar.
+- The website is built with HTML, CSS, and JavaScript.
+ 
+ 
+IF YOU DON'T KNOW
+If a question is not answered above, say you don't have that information and suggest contacting Victor by email at victorlancefigueroa@gmail.com or booking a meeting through the Schedule a Meeting section of the website.
+ 

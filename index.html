@@ -1,1166 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
+  <title>Victor Lance C. Figueroa — Cybersecurity Enthusiast</title>
+  <meta name="description" content="Victor Lance C. Figueroa — 2nd year BSIT Networking and Cybersecurity enthusiast at Central Luzon State University.">
 
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0f1a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='bold' fill='%2300ff41' text-anchor='middle'%3E%26gt;_%3C/text%3E%3C/svg%3E">
 
-
-
-<!--favicon-->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-<!--Google Font Link-->
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://app.cal.com">
-  <link rel="dns-prefetch" href="https://app.cal.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Enables the game lock (CSS hides the site until the mini-game is won) -->
+  <script>document.documentElement.classList.add("js");</script>
+  <noscript><style>body.locked{overflow:auto!important}body.locked main,body.locked .footer{display:block!important}.hero-reveal{opacity:1!important}.hero-card{display:flex!important}.hack-game,.bootlog{display:none!important}</style></noscript>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-
-<!--main-->
-<div id="tsparticles"></div>
-  <main>
-    
-
-
-
-<!--sidebar-->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-      <figure class="avatar-box ai-avatar">
-        <img src="./assets/images/1.jpg" class="avatar base" alt="Victor Lance">
-        <img src="./assets/images/hacker.jpg" class="avatar glitch" alt="Hacker Mode">
-        <div class="scanlines"></div>
-      </figure>
-        <div class="info-content">
-          <h1 class="name" title="Victor Lance Figueroa">Victor Lance Figueroa</h1>
-          
-        </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-
-<!--contacts-->
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:victorlancefigueroa@gmail.com" class="contact-link">victorlancefigueroa@gmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+09666788401" class="contact-link">096-66788-401</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="1982-06-23">22 September, 2007</time>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Science City of Muñoz, Philippines</address>
-            </div>
-          </li>
-        </ul>
-
-<!--hyperlinks-->
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.facebook.com/victorlance.figueroa.1" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-          <li class="social-item">
-            <a href="https://www.instagram.com/vctr.lnciiee/?hl=en" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-            <li class="social-item">
-            <p style="color: rgb(180, 178, 178)">@ 2026 Victor Lance Figueroa</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-
-
-
-
-
-
-<!--maincontent-->
-
-    <div class="main-content">
-
-
-<!--navbar-->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Work Experience</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Let's Connect</button>
-          </li>
-        </ul>
-      </nav>
-
-
-
-<!--about-->
-      <article class="about  active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            Hello I am a First Year Bachelor of Science in Information Technology on PHINMA Araullo University, I am 18 year's old and
-            currently living in Bantug Science City of Munoz, Philippines.
-          </p>
-            <p>Technology is about empowering people, driving change, and creating experience, rather than just tools.
-            Key motivation includes embrasing constant evolution, prioritizing user-centric-design, and preserving through debugging, 
-            remembering that the best solutions come from persistent effort
-          </p>
-        </section>
-
-
-
-<!--What i do-->
-        <section class="service">
-          <h3 class="h3 service-title">What I Do !!</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-                <p class="service-item-text">
-                  I build modern and high-quality design made at a professional level. By just using (HTML,CSS,JS).
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Enterprise software</h4>
-                <p class="service-item-text">
-                  I can do High-quality development systems for sites at the professional level using java like (Billing systems)
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile Gaming apps</h4>
-                <p class="service-item-text">
-                  I am Professional Mobile game player (pubgm-pmnc champ).
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-                <p class="service-item-text">
-                  I like landscapes and sceneries, capturing the beauty of the natural world. 
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-
-
-        <section class="testimonials">
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14"></time>
-
-              <div data-modal-text>
-                <p>
-                  
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-<!--Programming Language-->
-
-        <section class="clients">
-
-<h3 class="h3 clients-title">Modern Programming Technologies & Languages</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo 1.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo 2.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo 3.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo 4.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo 5.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo 6.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #WORK EXPERIENCE
-      -->
-
-      <article class="work-experience" data-page="work experience">
-
-        <section class="timeline content-card">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Professional Experience</h3>
-          </div>
-          <ol class="timeline-list">
-        <li class="timeline-item">
-              <h4 class="h4">Information Technology Professor - PHINMA Araullo University</h4>
-              <span>September 22 2028 - January 1 2033</span>
-
-          <ul class="timeline-text">
-            <li>Achievement #1 High-Impact Publications about Modern Technology</li>
-            <li>Achievement #2 Mentorship Success Supervising PhD and Master’s theses </li>
-        </ul>
-      </li>
-  </ol>
-
-              <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4">Engineer III - Department of Information and Communications Technology  </h4>
-                <span>may 22 2033 - current</span>
-
-            <ul class="timeline-text"> 
-              <li>Achievement #1 Project Management with a 40% performance boost</li>
-              <li>Achievement #2 Security Initiatives Designed and executed security initiatives that decreased security incidents by 40% through enhanced threat detection.</li>
-            </ul>
-      </li>
-  </ol>
-
-
-</section>
-
-        <section class="skill">
-
-  <div class="content-card skills-box">
-
-    <h3 class="skills-main-title">TECHNICAL SKILLS</h3>
-
-    <ul class="skills-pills">
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="development (Dev) and IT operations (Ops)">
-      DevOps
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="software for smartphones and tablets">
-      Mobile app development
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip=" transfer of data">
-     Data migration
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="collection of instructions, data, or programs used to operate computers and execute specific tasks">
-      Software
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="process of moving digital assets">
-      Cloud migration
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip=" elements of digital products">
-      User interface design
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip=" server-side logic, databases, and APIs that power websites and applications">
-      Back-end development
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="the process of creating digital or physical products">
-      User experience design
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="delivery of IT resources">
-      Cloud computing
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="he structured process of conceiving, designing, programming, testing, and maintaining computer applications, frameworks, or components">
-      Software development
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="the process of creating visual representations">
-      Data modeling
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="Experience with types of hardware">
-      Hardware Tech
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="the process of analyzing large, complex datasets to discover hidden patterns, correlations, and anomalies using machine learning, statistics, and database systems">
-        Data Mining
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip=" To define, analyze, and improve systems">
-        Systems Analysis
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip=" strategies, tools, and processes used to monitor, operate, and govern cloud-based infrastructure and services">
-        Cloud management
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="the strategic planning, implementation, and administration of an organization’s technology infrastructure">
-        IT management
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="the practice of protecting digital information throughout its entire lifecycle from unauthorized access, corruption, or theft">
-        Data security
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="critical system software">
-        Operating systems
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="relational databases to design schemas, write queries, and manage data">
-        SQL software
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="multidisciplinary process of designing, creating, and releasing video games">
-        Game development
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip=" the application of knowledge, skills, tools, and techniques to project activities to meet project requirements">
-        Project management
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="interdisciplinary field combining mathematics, statistics, programming">
-        Data Science
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="converting readable data (plaintext) into an unreadable, scrambled format (ciphertext)">
-        Encryption
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="systematic approach to identifying, diagnosing, and solving technical problems in systems, machines, or software">
-        Troubleshooting
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="the art and practice of planning and projecting ideas through visual and textual content, serving as a form of visual communication">
-        Graphic design
-      </li>
-
-      <li class="skill-pill intermediate tooltip" data-tooltip="assists customers">
-        Customer support
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="the systematic process of identifying, analyzing, and removing errors (bugs) from software or hardware">
-        Debugging
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="precise 2D and 3D drafting, modeling, and documentation">
-       AutoCAD
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="database, including user logins, data modifications">
-        Database auditing
-      </li>
-      
-      <li class="skill-pill beginner tooltip" data-tooltip="adopting freely accessible, modifiable software to enhance innovation, reduce vendor lock-in, and lower licensing costs">
-        Integration of open source technology
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="formal, sociotechnical, organizational system designed to collect, process, store, and distribute information">
-        Information systems
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="field of engineering and computer science that designs, constructs, and operates intelligent machines">
-        Robotics
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="subset of artificial intelligence">
-        Machine Learning
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="a branch of computer science that enables machines to simulate human intelligence">
-        Artificial intelligence
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="acts as the primary, centralized point of contact (SPOC) between an organization's IT department and its users (employees or customers) to manage incidents, service requests, and communication">
-        Service Desk
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="the practice of protecting systems, networks, programs, and data from digital attacks, unauthorized access, or destruction">
-        Cybersecurity
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="connecting a modem to a router via Ethernet">
-        Network setup
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="sets of instructions and formal rules used to communicate with computers and create software, applications, or systems">
-        Programming languages
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="the structured design of a computer network,">
-        Network architecture
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="consists of policies, technologies, and procedures designed to protect network infrastructure, data, and resources from unauthorized access, misuse, modification, or destruction">
-        Network security
-      </li>
-
-      <li class="skill-pill beginner tooltip" data-tooltip="focuses on the user-facing part of websites and applications, creating interactive, responsive layouts using HTML, CSS, and JavaScript">
-        Front-end development
-      </li>
-
-    </ul>
-
+<body class="locked">
+
+  <!-- Backgrounds -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <!-- Hacked Overlay -->
+  <div class="hack-overlay" id="hackOverlay" aria-hidden="true" hidden>
+    <div class="hack-overlay-bars" aria-hidden="true"></div>
+    <div class="hack-overlay-inner">
+      <div class="hack-glitch" data-text="SYSTEM BREACHED">SYSTEM BREACHED</div>
+      <div class="hack-sub"><span class="ok-text">ACCESS GRANTED</span> — Decrypting Profile...</div>
+    </div>
   </div>
 
-</section>
-
-
-
-      </article>
-
-<!--resume-->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-<section class="timeline content-card">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">OUR LADY OF THE SACRED HEART COLLEGE OF GUIMBA INC. </h4>
-              <span>2018-2019</span>
-              <p class="timeline-text">
-                School year 2018-2019 I graduated Grade school in OLSHCO Guimba Nueva Ecija
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">OUR LADY OF THE SACRED HEART COLLEGE OF GUIMBA INC. </h4>
-              <span>2022-2023</span>
-              <p class="timeline-text">
-                School year 2022-2023 I graduated High School in OLSHCO Guimba Nueva Ecija
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">OUR LADY OF THE SACRED HEART COLLEGE OF GUIMBA INC. </h4>
-              <span>2024-2025</span>
-              <p class="timeline-text">
-                School year 2024-2025 I graduated Senior High School in OLSHCO Guimba Nueva Ecija
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">PHINMA Araullo University</h4>
-              <span>2025-current</span>
-              <p class="timeline-text">
-                School year 2025-2030 I am currently enrolled for Bachelor of Science in Information Technology, 
-                in PHINMA Araullo University Cabanatuan City Philippines.
-              </p>
-            </li>
-          </ol>
-
-        </section>
-
-<section class="timeline content-card">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">School Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Technical Drafting NC II </h4>
-
-              <span>2022</span>
-
-              <p class="timeline-text">
-                Cetificate Holder for NC II Technical drafting, A TESDA-certified course that trains individuals to 
-                create technical drawings for architectural, structural, electrical, plumbing, and mechanical layouts using CAD software. 
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Visual Graphic Design</h4>
-
-              <span>2023</span>
-
-              <p class="timeline-text">
-                Certificate Holder for NC III Visual Graphic Design, A TESDA-certified course that trains individuals to aquire skills to create 
-                digital and print graphics, including logos, branding, UI/UX, product packaging, and booth displays.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Work Immersion </h4>
-
-              <span>2023</span>
-
-              <p class="timeline-text">
-                I have worked with senior Civil and Mechanical engineers in National Irrigation Administration - Upper Pampanga River Inegrated Irrigation Systems,
-                For office tasks like documentation and data management, or technical field operations related to irrigation development.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <div class="skills-header">
-
-            <h3 class="h3 skills-title">Skill Percentage</h3>
-            <a href="./assets/images/resume.pdf" class="download-resume-btn" download="resume.pdf">
-
-              <span>Download My Resume</span>
-
-              <ion-icon name="download-outline"></ion-icon>
-
-            </a>
-
-          </div>
-
-          <ul class="skills-list content-card">
-
-  <li class="skill-progress-item">
-
-    <div class="skill-progress-header">
-      <h5>Programming Languages</h5>
-      <span class="skill-percent tooltip" data-tooltip="Comfortable building full projects">
-        80%
-      </span>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#home"><span class="logo-bracket">&gt;</span> vcf<span class="logo-cursor">_</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-label="Toggle sound">🔊</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
-
-    <div class="progress-bar">
-      <div class="progress-fill intermediate" data-level="80"></div>
-    </div>
-
-  </li>
-
-  <li class="skill-progress-item">
-
-    <div class="skill-progress-header">
-      <h5>Networking</h5>
-      <span class="skill-percent tooltip" data-tooltip="Solid understanding of networking concepts">
-        70%
-      </span>
-    </div>
-
-    <div class="progress-bar">
-      <div class="progress-fill intermediate" data-level="70"></div>
-    </div>
-
-  </li>
-
-  <li class="skill-progress-item">
-
-    <div class="skill-progress-header">
-      <h5>Cybersecurity</h5>
-      <span class="skill-percent tooltip" data-tooltip="Hands-on with CTF and security tools">
-        90%
-      </span>
-    </div>
-
-    <div class="progress-bar">
-      <div class="progress-fill intermediate" data-level="90"></div>
-    </div>
-
-  </li>
-
-  <li class="skill-progress-item">
-
-    <div class="skill-progress-header">
-      <h5>Database</h5>
-      <span class="skill-percent tooltip" data-tooltip="Basic database design and queries">
-        50%
-      </span>
-    </div>
-
-    <div class="progress-bar">
-      <div class="progress-fill beginner" data-level="50"></div>
-    </div>
-
-  </li>
-
-</ul>
-
-      </article>
-
-
-
-
-
-<!--portfolio-->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section>
-
-          <ul class="project-list">
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/1.png" alt="Photo 1" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Billing System</h4>
-                    <p class="project-desc">A simple Java Billing Sytem</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/2.png" alt="Photo 2" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Billing System</h4>
-                    <p class="project-desc">A simple Billing GUI system</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/3.png" alt="Photo 3" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Billing System</h4>
-                    <p class="project-desc">A receipt Final process of a Billing System</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/4.png" alt="Photo 4" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">MySQL</h4>
-                    <p class="project-desc">This is a simple Data Base program</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/5.png" alt="Photo 5" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Data Base</h4>
-                    <p class="project-desc">This is a simple Data Base interface</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/6.png" alt="Photo 6" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">HTML website</h4>
-                    <p class="project-desc">This is a simple yet modern website code using HTML and CSS</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/7.png" alt="Photo 6" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">CTF Try Hack Me </h4>
-                    <p class="project-desc">(Capture The Flag) challenges, browser-based cybersecurity labs designed to teach penetration testing, ethical hacking, and defense skills by exploiting intentionally vulnerable machines</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/8.png" alt="Photo 6" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">picoCTF</h4>
-                    <p class="project-desc">a free, gamified computer security education program and competition created by Carnegie Mellon University (CMU) aimed at students, primarily middle and high schoolers, though open to all. It serves as a, hacking game, cybersecurity training platform, and cybersecurity competition, providing, "picoGym" for year-round practice and "picoPrimer" for basics.</p>
-                  </figcaption>
-                </figure>
-
-              </a>
-            </li>
-
-            <li class="project-item active">
-
-              <a href="">
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      
+      <div class="terminal reveal">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">victor@clsu: ~/whoami</span>
+          <button class="replay-btn" id="replayBtn" type="button" title="Replay sequence">⟳ <span>Replay</span></button>
+        </div>
+        <div class="terminal-body">
+          <div class="bootlog" id="bootlog" aria-hidden="true"></div>
           
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+          <!-- CTF Mini Game -->
+          <div class="hack-game" id="hackGame" hidden>
+            <button class="ctf-skip" id="skipGameBtn" type="button">Skip challenge →</button>
+            <div class="hack-game-head" id="hackIntro">
+              <span class="hack-game-title">⚠ ENCRYPTED FIREWALL DETECTED</span>
+              <span class="hack-game-sub">Capture 3 flags to breach the firewall. Decode each intercepted message in the terminal, then submit the flag.</span>
+              <button class="btn btn-primary" id="startGameBtn" type="button" style="margin-top:10px;">Initialize Hack <span class="arrow">→</span></button>
+            </div>
 
-                  <img src="./assets/images/9.png" alt="Photo 6" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Red Team Certification</h4>
-                    <p class="project-desc">(CCEP) certification Certified CyberSecurity Educator Professional. </p>
-                  </figcaption>
-                </figure>
+            <div class="ctf" id="hackPlay" hidden>
+              <ol class="ctf-steps" aria-label="Challenge progress">
+                <li>1 · BASE64</li>
+                <li>2 · ROT13</li>
+                <li>3 · HEX</li>
+              </ol>
 
-              </a>
+              <div class="ctf-brief">
+                <h5 class="ctf-title" id="ctfTitle"></h5>
+                <div class="ctf-text" id="ctfText"></div>
+                <div class="ctf-cipher" id="ctfCipher" aria-label="Encoded payload"></div>
+              </div>
+
+              <div class="cli">
+                <div class="cli-out" id="cliOut" role="log" aria-live="polite"></div>
+                <label class="cli-line">
+                  <span class="cli-prompt">visitor@clsu:~$</span>
+                  <input id="cliInput" type="text" maxlength="500" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="type help" aria-label="Terminal input">
+                </label>
+              </div>
+
+              <form class="flag-form" id="flagForm" autocomplete="off">
+                <input id="flagInput" type="text" maxlength="120" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="VCF{...}" aria-label="Flag">
+                <button class="btn btn-primary btn-sm" type="submit">Submit Flag</button>
+              </form>
+              <div class="ctf-status" id="ctfStatus" role="status"></div>
+              <button class="ctf-hint" id="hintBtn" type="button">💡 Need a hint?</button>
+            </div>
+          </div>
+
+          <div class="hero-reveal" id="heroReveal">
+            <p><span class="prompt">$</span> whoami</p>
+            <h1 class="hero-name">VICTOR LANCE C. FIGUEROA</h1>
+            <p><span class="prompt">$</span> cat roles.txt</p>
+            <p class="typed-line"><span id="typer"></span><span class="caret" aria-hidden="true"></span></p>
+            <p><span class="prompt">$</span> uptime <span class="muted">— constantly learning &amp; breaking things</span></p>
+            <p><span class="prompt">$</span> <span class="comment"># scroll down to view my profile</span></p>
+            <p class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Establish Contact <span class="arrow">&rarr;</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card" id="heroCard">
+        <img src="profile.jpg" alt="Victor Lance C. Figueroa" class="profile-img" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EAdd%20profile.jpg%3C%2Ftext%3E%3C%2Fsvg%3E'">
+        <div class="hero-tagline">"Insanity is just another state of mind"</div>
+        <div class="hero-links">
+          <a href="https://github.com/Z1msanity" target="_blank" class="chip">GitHub</a>
+          <a href="https://www.linkedin.com/in/victorlancefigueroa/" target="_blank" class="chip">LinkedIn</a>
+        </div>
+      </aside>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-kicker">// about</h2>
+        <h3 class="section-title">About Me</h3>
+        <div class="grid about-grid">
+          <div class="card about-story reveal">
+            <h4>My Story</h4>
+            <p>Hello! I am a 2nd year BSIT Networking and Cybersecurity enthusiast at <b>Central Luzon State University</b>.</p>
+            <p>Technology is about empowering people, driving change, and creating meaningful experiences—not just building tools. True innovation comes from embracing constant evolution, prioritizing user-centric design, and persevering through debugging, knowing that the best solutions are born from persistent effort.</p>
+          </div>
+          <div class="card about-facts reveal">
+            <h4>Professional Details</h4>
+            <dl class="facts">
+              <div><dt>Email</dt><dd><a href="mailto:victorlancefigueroa@gmail.com">victorlancefigueroa@gmail.com</a></dd></div>
+              <div><dt>University</dt><dd>Central Luzon State University</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-kicker">// resume</h2>
+        <h3 class="section-title">Education &amp; Experience</h3>
+        
+        <div class="card reveal">
+          <h4>Education</h4>
+          <ul class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2025 — Current</div>
+              <div class="timeline-body">
+                <h5>Central Luzon State University</h5>
+                <p class="timeline-role">Bachelor of Science in Information Technology</p>
+                <p>Currently enrolled in BSIT, specializing in Networking and Cybersecurity.</p>
+              </div>
             </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/10.png" alt="Photo 6" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Red Team Certification</h4>
-                    <p class="project-desc">Data Science for CyberSecurity. </p>
-                  </figcaption>
-                </figure>
-
-              </a>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2024 — 2025</div>
+              <div class="timeline-body">
+                <h5>Our Lady of the Sacred Heart College of Guimba Inc.</h5>
+                <p class="timeline-role">Senior High School</p>
+              </div>
             </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/11.png" alt="Photo 6" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Red Team Certification</h4>
-                    <p class="project-desc">Data Exfiltration - Red Team Operations. </p>
-                  </figcaption>
-                </figure>
-
-              </a>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2022 — 2023</div>
+              <div class="timeline-body">
+                <h5>Our Lady of the Sacred Heart College of Guimba Inc.</h5>
+                <p class="timeline-role">High School</p>
+              </div>
             </li>
-
-            <li class="project-item active">
-
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/12.png" alt="Photo 6" loading="lazy">
-                  <figcaption class="project-info">
-                    <h4 class="project-title">Red Team Certification</h4>
-                    <p class="project-desc">Spear Phising and Opsec Techniques. </p>
-                  </figcaption>
-                </figure>
-
-              </a>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2018 — 2019</div>
+              <div class="timeline-body">
+                <h5>Our Lady of the Sacred Heart College of Guimba Inc.</h5>
+                <p class="timeline-role">Grade School</p>
+              </div>
             </li>
           </ul>
-
-        </section>
-
-      </article>
-
-<!--portfolio Box-->
-        <div class="portfolio-modal-container" data-portfolio-modal>
-          <div class="overlay" data-portfolio-overlay></div>
-          <section class="portfolio-modal">
-            <button class="modal-close-btn portfolio-modal-close" data-portfolio-close>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <figure class="modal-img-box">
-              <img src="" alt="" data-portfolio-img width="800">
-            </figure>
-            <h3 class="modal-title" data-portfolio-title></h3>
-          </section>
         </div>
 
-
-
-<!--Contacts-->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1357.8369064761637!2d120.92324612791398!3d15.722402334740144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3390d7029d9d2189%3A0x4c4a51cc246adb88!2sCJ%20Mansion!5e0!3m2!1sen!2sph!4v1776862816035!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-            <form id="contact-form" class="form">
-
-            <div class="input-wrapper">
-              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-            <div id="popup" class="popup">
-            <div class="popup-content">
-                <p id="popup-message">Sending...</p>
+        <div class="card reveal" style="margin-top: 24px;">
+          <h4>School Experience &amp; Certifications</h4>
+          <ul class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2023</div>
+              <div class="timeline-body">
+                <h5>Visual Graphic Design (NC III)</h5>
+                <p>A TESDA-certified course training individuals to acquire skills in creating digital and print graphics, including logos, branding, UI/UX, product packaging, and booth displays.</p>
               </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2023</div>
+              <div class="timeline-body">
+                <h5>Work Immersion</h5>
+                <p>Worked with senior Civil and Mechanical engineers in National Irrigation Administration - Upper Pampanga River Integrated Irrigation Systems (NIA-UPRIS). Handled documentation, data management, and technical field operations.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-date">2022</div>
+              <div class="timeline-body">
+                <h5>Technical Drafting (NC II)</h5>
+                <p>TESDA-certified course training individuals to create technical drawings for architectural, structural, electrical, plumbing, and mechanical layouts using CAD software.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-kicker">// skills</h2>
+        <h3 class="section-title">Specializations</h3>
+
+        <div class="grid skills-grid">
+          <div class="card reveal">
+            <h4>Technical Proficiency</h4>
+            <div class="bars" id="skillBars">
+              <div class="bar" data-value="90"><div class="bar-head"><span>Python & Cybersecurity</span><span class="bar-val">90%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+              <div class="bar" data-value="80"><div class="bar-head"><span>Java & Web Design</span><span class="bar-val">80%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+              <div class="bar" data-value="80"><div class="bar-head"><span>Database Management</span><span class="bar-val">80%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+              <div class="bar" data-value="70"><div class="bar-head"><span>Networking & JavaScript</span><span class="bar-val">70%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+            </div>
           </div>
 
-          </form>
+          <div class="card reveal">
+            <h4>Certifications</h4>
+            <div class="chips">
+              <span class="chip">CPEH</span>
+              <span class="chip">CWPT</span>
+              <span class="chip">CCEP</span>
+              <span class="chip">ISC2</span>
+              <span class="chip">IBMCE</span>
+              <span class="chip">PSITE</span>
+              <span class="chip">CYBER PH</span>
+              <span class="chip">Technical Drafting NC II</span>
+              <span class="chip">Visual Graphic Design NC III</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- Portfolio Section -->
+    <section class="section section-alt" id="portfolio">
+      <div class="container">
+        <h2 class="section-kicker">// portfolio</h2>
+        <h3 class="section-title">Projects &amp; Achievements</h3>
+        
+        <div class="portfolio-grid">
+          <!-- Item 1 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="Billing System" data-images="assets/images/1.png,assets/images/1-2.png,assets/images/1-3.png,assets/images/1-4.png">
+            <img src="assets/images/1.png" alt="Billing System" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>Billing System</h4>
+              <p>A simple Java Billing System</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="Billing System GUI" data-images="assets/images/2.png,assets/images/2-2.png,assets/images/2-3.png,assets/images/2-4.png">
+            <img src="assets/images/2.png" alt="Billing System GUI" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>Billing GUI System</h4>
+              <p>A simple Billing GUI system</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="Billing Receipt" data-images="assets/images/3.png,assets/images/3-2.png,assets/images/3-3.png,assets/images/3-4.png">
+            <img src="assets/images/3.png" alt="Billing Receipt" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>Billing Receipt</h4>
+              <p>Final process of a Billing System</p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="MySQL" data-images="assets/images/4.png,assets/images/4-2.png,assets/images/4-3.png,assets/images/4-4.png">
+            <img src="assets/images/4.png" alt="MySQL" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>MySQL Program</h4>
+              <p>This is a simple Database program</p>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="Database Interface" data-images="assets/images/5.png,assets/images/5-2.png,assets/images/5-3.png,assets/images/5-4.png">
+            <img src="assets/images/5.png" alt="Database Interface" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>Data Base Interface</h4>
+              <p>This is a simple Data Base interface</p>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="HTML Website" data-images="assets/images/6.png,assets/images/6-2.png,assets/images/6-3.png,assets/images/6-4.png">
+            <img src="assets/images/6.png" alt="HTML Website" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>HTML Website</h4>
+              <p>A simple yet modern website using HTML & CSS</p>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="Try Hack Me" data-images="assets/images/7.png,assets/images/7-2.png,assets/images/7-3.png,assets/images/7-4.png">
+            <img src="assets/images/7.png" alt="Try Hack Me" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>CTF Try Hack Me</h4>
+              <p>Browser-based cybersecurity labs</p>
+            </div>
+          </div>
+          <!-- Item 8 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="picoCTF" data-images="assets/images/8.png,assets/images/8-2.png,assets/images/8-3.png,assets/images/8-4.png">
+            <img src="assets/images/8.png" alt="picoCTF" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>picoCTF</h4>
+              <p>Gamified cybersecurity education program</p>
+            </div>
+          </div>
+          <!-- Item 9 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="CCEP" data-images="assets/images/9.png,assets/images/9-2.png,assets/images/9-3.png,assets/images/9-4.png">
+            <img src="assets/images/9.png" alt="CCEP" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>Red Team Certification</h4>
+              <p>Certified CyberSecurity Educator Professional</p>
+            </div>
+          </div>
+          <!-- Item 10 -->
+          <div class="portfolio-card reveal" role="button" tabindex="0" data-title="Certified Web Penetration Tester (CWPT)" data-images="assets/images/13.png">
+            <img class="contain" src="assets/images/13.png" alt="Certified Web Penetration Tester (CWPT) certificate" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20600%20400%27%3E%3Crect%20width%3D%27600%27%20height%3D%27400%27%20fill%3D%27%230d1410%27%2F%3E%3Ctext%20x%3D%27300%27%20y%3D%27205%27%20font-family%3D%27monospace%27%20font-size%3D%2722%27%20fill%3D%27%2300ff41%27%20text-anchor%3D%27middle%27%3EImage%20coming%20soon%3C%2Ftext%3E%3C%2Fsvg%3E'">
+            <div class="portfolio-info">
+              <h4>CWPT Certification</h4>
+              <p>Certified Web Penetration Tester, issued by Appkademiya on Sep 11, 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      </article>
+    <!-- Contact & Connect Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-kicker">// contact</h2>
+        <h3 class="section-title">Get In Touch</h3>
 
-<!-- lets connect -->
+        <div class="grid contact-grid">
+          <!-- Public contact details only -->
+          <div class="card contact-info reveal">
+            <h4>Contact</h4>
+            <ul class="contact-list">
+              <li><span class="contact-icon">✉</span><a href="mailto:victorlancefigueroa@gmail.com">victorlancefigueroa@gmail.com</a></li>
+              <li><span class="contact-icon">💼</span><a href="https://www.linkedin.com/in/victorlancefigueroa/" target="_blank">linkedin.com/in/victorlancefigueroa</a></li>
+            </ul>
+          </div>
 
-      <article class="connect" data-page="let's connect">
-
-<div class="calendar-header">
-<h1 style="color:gold;" >Schedule for a Meeting Here !</h1>
-</div>
-
-  <!-- CALENDAR -->
-  <div class="calendar-container">
-  <iframe 
-  src="https://cal.com/victorlance-figueroa-tkwzwt"
-  loading="lazy"
-  width="100%"
-  height="700">
-</iframe>
-
-</div>
-  </section>
-</article>
-
-
+          <!-- Right: Let's Connect (Cal.com) -->
+          <div class="card reveal">
+            <h4>Schedule a Meeting</h4>
+            <p style="color: var(--muted); margin-bottom: 15px; font-size: 0.9rem;">Book a time to talk about tech, cybersecurity, or collabs.</p>
+            <div class="calendar-container" style="background: #fff; border-radius: 10px; overflow: hidden;">
+              <iframe src="https://cal.com/victorlance-figueroa-tkwzwt" width="100%" height="500" style="border:none;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> VICTOR LANCE C. FIGUEROA. All rights reserved.</p>
+    </div>
+  </footer>
 
-<!--Contact email-->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-  <script>
-  (function(){
-    emailjs.init("XoKZjotLCPHE7pZnn"); // from EmailJS dashboard
-  })();
-</script>
-
-
-
-  <!--Background particles-->
-  <script>
-const bars = document.querySelectorAll('.progress-fill');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const bar = entry.target;
-      const level = bar.getAttribute('data-level');
-      bar.style.width = level + "%";
-      observer.unobserve(bar);
-    }
-  });
-}, { threshold: 0.4 });
-bars.forEach(bar => observer.observe(bar));
-</script>
-
-
-  <script>
-function toggleAI() {
-  const chat = document.getElementById("aiChat");
-
-  if (chat.style.display === "block") {
-    chat.style.display = "none";
-  } else {
-    chat.style.display = "block";
-  }
-}
-</script>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-<script src="./assets/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-  <!--AI ASSISTANT-->
-  <div class="ai-container">
-  <div class="ai-button" onclick="toggleAI()">
-  💬
-  <span class="ai-status"></span>
-</div>
-  <!-- Chat Popup -->
-  <div class="ai-chat" id="aiChat">
-    <iframe
-    src="https://www.chatbase.co/chatbot-iframe/PUKjxKbjiX4WuT383pv9p"
-    width="100%"
-    style="height: 100%; min-height: 500px"
-    frameborder="0"
-></iframe>
+  <!-- Portfolio Gallery Modal -->
+  <div class="modal" id="portfolioModal" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <div class="gallery-stage">
+        <button class="gallery-nav gallery-prev" id="galleryPrev" type="button" aria-label="Previous photo">&#10094;</button>
+        <img id="modalImg" src="" alt="Project photo">
+        <button class="gallery-nav gallery-next" id="galleryNext" type="button" aria-label="Next photo">&#10095;</button>
+      </div>
+      <h3 id="modalTitle">Project Title</h3>
+      <p class="gallery-count" id="galleryCount"></p>
+      <div class="gallery-thumbs" id="galleryThumbs"></div>
+    </div>
   </div>
-</div>
 
+  <div class="easter-egg-toast" id="easterEggToast" role="status" aria-live="polite" hidden>
+    <strong>SECRET UNLOCKED</strong><span>Konami protocol accepted. You found the hidden layer.</span>
+  </div>
 
-<!-- contact -->
-<div id="toast" class="toast"></div>
-
-
-<script type="text/javascript" src="https://cal.com/embed.js" defer></script>
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 </body>
 </html>
